@@ -1,0 +1,239 @@
+{
+  "brand": {
+    "name": "CyberScope",
+    "tagline": "Auditeur Web offensif",
+    "version": "v7.9.1"
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "arsenal": "Arsenal",
+    "pricing": "Tarifs",
+    "selfhost": "Auto-hébergement",
+    "signin": "Connexion",
+    "signup": "Inscription",
+    "startFree": "Commencer gratuitement",
+    "dashboard": "Tableau de bord",
+    "home": "Accueil",
+    "help": "Aide"
+  },
+  "sidebar": {
+    "groups": {
+      "main": "Principal",
+      "scanner": "Scanner",
+      "attacks": "Modules d'attaque",
+      "intel": "Intel & Payloads",
+      "recon": "Reconnaissance",
+      "team": "Équipe",
+      "system": "Système"
+    },
+    "items": {
+      "dashboard": "Tableau de bord",
+      "newScan": "Nouveau scan",
+      "autopilot": "Pilote IA",
+      "history": "Historique",
+      "monitors": "Moniteurs continus",
+      "compare": "Comparer",
+      "schedules": "Planifications",
+      "weaponry": "Arsenal",
+      "jwt": "Cracker JWT",
+      "graphql": "Scanner GraphQL",
+      "race": "Race Condition",
+      "threatIntel": "Threat Intel",
+      "subdomains": "Sous-domaines",
+      "nuclei": "Modèles Nuclei",
+      "payloads": "Payloads perso",
+      "playground": "Playground",
+      "notifications": "Notifications",
+      "takeover": "Scan Takeover",
+      "bulk": "Scan en masse",
+      "takeoverHistory": "Historique Takeover",
+      "takeoverMonitors": "Moniteurs Takeover",
+      "playbooks": "Playbooks",
+      "services": "Services",
+      "workspaces": "Espaces d'équipe",
+      "apiKeys": "Clés API & SDK",
+      "billing": "Facturation",
+      "deploy": "Auto-hébergement",
+      "settings": "Paramètres"
+    }
+  },
+  "landing": {
+    "badge": "v7.9 · Vague commerciale",
+    "heroLine1": "Le scanner de",
+    "heroLine2": "vulnérabilités web",
+    "heroLine3": "pour",
+    "heroAccent": "les pros.",
+    "heroBody": "CyberScope combine un crawler Playwright profond avec 54 modules d'attaque, une vérification IA triple, et un flux CVE en direct. Pensé pour les chasseurs de bugs, red teams et MSSP.",
+    "ctaScan": "Lancer un scan gratuit",
+    "ctaPricing": "Voir les tarifs",
+    "ctaOpenDashboard": "Ouvrir le tableau",
+    "stats": {
+      "modules": "Modules d'attaque",
+      "payloads": "Payloads en cache",
+      "cves": "CVE suivis (live)",
+      "aiModels": "Modèles IA"
+    },
+    "features": {
+      "title": "Conçu pour ceux qui livrent des exploits, pas des tickets.",
+      "kicker": "Pile de fonctionnalités",
+      "killer": {
+        "title": "Modules d'attaque tueurs",
+        "body": "JWT cracking, GraphQL introspection, HTTP Smuggling v2, SSRF profond, Prototype Pollution, Race Conditions, MFA Bypass — 54 modules."
+      },
+      "ai": {
+        "title": "Pilote IA + tueur de faux positifs",
+        "body": "Vote triple (Claude Sonnet 4.6 · GPT · Gemini) réduit les faux positifs à zéro et construit des chaînes d'exploit inédites."
+      },
+      "crawler": {
+        "title": "Crawler profond v2 (Playwright)",
+        "body": "File BFS priorisée · 150+ params cachés · sitemap + wayback + urlscan · SPA JS · GraphQL/WebSocket auto."
+      },
+      "intel": {
+        "title": "Threat Intel en direct",
+        "body": "Sync CVE depuis NVD · briefs IA hebdo adaptés à ton stack · mapping conformité (SOC2 · PCI · HIPAA · ISO27001)."
+      },
+      "team": {
+        "title": "Espaces équipe + RBAC",
+        "body": "Espaces multi-analystes · invitation par email · owner / admin / analyste / viewer · assignations · commentaires."
+      },
+      "continuous": {
+        "title": "Moniteurs continus",
+        "body": "Re-scan planifié · webhooks Discord / Slack / Telegram · diff vs run précédent · alertes uniquement sur nouveaux résultats."
+      }
+    },
+    "arsenal": {
+      "kicker": "Arsenal d'attaque",
+      "title": "12 modules tueurs disponibles aujourd'hui.",
+      "cta": "Ouvrir l'arsenal"
+    },
+    "pricing": {
+      "kicker": "Tarifs",
+      "title": "Choisis ton plan. Annule quand tu veux.",
+      "mostPopular": "Le plus populaire",
+      "bestValue": "Meilleur rapport",
+      "startFree": "Commencer gratuitement",
+      "get": "Obtenir",
+      "buy": "Acheter",
+      "current": "Plan actuel",
+      "redirecting": "Redirection…",
+      "perMonth": "/ mois",
+      "oneTime": "unique",
+      "scansPerMonth": "Scans / mois",
+      "targets": "Cibles"
+    },
+    "deploy": {
+      "kicker": "Auto-hébergement",
+      "title": "Déploie l'arsenal complet sur ta machine.",
+      "body": "Les plans Enterprise et Lifetime débloquent un .tar.gz — Docker, docker-compose, CLI, 219K payloads. Zéro télémétrie.",
+      "download": "Télécharger v7.9.0 (.tar.gz)",
+      "downloadLocked": "Passe à Enterprise pour débloquer",
+      "github": "GitHub"
+    },
+    "final": {
+      "kicker": "Disponible",
+      "title": "Arrête de chasser des tickets. Commence à posséder les assets.",
+      "body": "Inscris-toi et obtiens 5 scans profonds gratuits. Sans carte. Annulable en un clic.",
+      "cta": "Créer un compte gratuit"
+    },
+    "footer": {
+      "terms": "Conditions",
+      "privacy": "Confidentialité",
+      "docs": "Docs"
+    }
+  },
+  "pricing": {
+    "badge": "Tarifs simples",
+    "title": "Choisis ton plan.",
+    "body": "Tous les plans contiennent les 54 modules. Les plans supérieurs débloquent les sièges d'équipe, le pilote IA et les moniteurs continus.",
+    "canceled": "Paiement annulé — choisis un plan quand tu veux.",
+    "matrix": {
+      "title": "Matrice des fonctionnalités",
+      "capability": "Capacité",
+      "rows": {
+        "modules": "54 modules d'attaque",
+        "crawler": "Crawler profond v2 (Playwright)",
+        "ai": "Pilote IA + tueur de FP",
+        "monitors": "Moniteurs continus + webhooks",
+        "cve": "Sync CVE + briefs Threat Intel",
+        "team": "Espaces équipe + RBAC",
+        "api": "API publique + SDKs",
+        "whitelabel": "Rapports white-label",
+        "download": "Téléchargement auto-hébergé",
+        "lifetime": "Paiement unique"
+      }
+    },
+    "continue": "Continuer"
+  },
+  "auth": {
+    "signin": {
+      "title": "Connexion à CyberScope",
+      "subtitle": "Content de te revoir.",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "loading": "Connexion…",
+      "noAccount": "Pas de compte ?",
+      "createAccount": "Créer"
+    },
+    "signup": {
+      "title": "Créer ton compte CyberScope",
+      "subtitle": "5 scans gratuits. Sans carte.",
+      "name": "Nom (optionnel)",
+      "email": "Email",
+      "password": "Mot de passe (8 min)",
+      "password2": "Confirmation",
+      "submit": "Créer",
+      "loading": "Création…",
+      "haveAccount": "Déjà inscrit ?",
+      "signin": "Se connecter",
+      "passwordMismatch": "Les mots de passe ne correspondent pas",
+      "passwordTooShort": "8 caractères minimum"
+    }
+  },
+  "billing": {
+    "title": "Abonnement & Factures",
+    "subtitle": "Gère ton plan, tes quotas et tes moyens de paiement.",
+    "currentTier": "Plan actuel",
+    "scansPerMonth": "Scans / mois",
+    "targetQuota": "Quota cibles",
+    "changePlan": "Changer",
+    "managePortal": "Portail Stripe",
+    "cancelAtPeriodEnd": "Annuler à la fin",
+    "status": "Statut",
+    "stripeStatus": "Statut Stripe",
+    "customerId": "ID client",
+    "cancelsAtPeriodEnd": "Annulation en fin de période",
+    "currentPeriodEnds": "Fin de la période",
+    "paymentSuccess": "Paiement réussi — tu es sur",
+    "enjoy": "Profite."
+  },
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "help": {
+    "button": "Aide",
+    "close": "Fermer",
+    "dashboard": {
+      "title": "Tableau de bord",
+      "body": "Centre de commande pour tous les scans, métriques live et outils rapides."
+    },
+    "newScan": {
+      "title": "Nouveau scan",
+      "body": "Entre une URL ou un domaine cible. Le mode profond utilise Playwright + fouille de 150+ params cachés."
+    },
+    "weaponry": {
+      "title": "Arsenal",
+      "body": "6 onglets d'attaque avancés. Renseigne les cibles et clique sur Lancer."
+    },
+    "billing": {
+      "title": "Facturation",
+      "body": "Change de plan ou ouvre le portail Stripe pour mettre à jour ta carte."
+    },
+    "workspaces": {
+      "title": "Espaces d'équipe",
+      "body": "Invite tes collègues par email. Rôles : owner / admin / analyst / viewer."
+    }
+  }
+}

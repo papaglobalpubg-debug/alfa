@@ -1,0 +1,33 @@
+CyberScope v7.9.x - All-In-One Package
+======================================
+
+This folder contains the COMPLETE project ready to upload to GitHub.
+
+How to use:
+1. Place this entire folder at any location on your computer.
+2. Double-click UPLOAD_TO_GITHUB.bat
+3. Enter the path to this folder when asked.
+4. Enter your GitHub repo URL.
+5. Done!
+
+What is included:
+- All original CyberScope source code (unchanged)
+- All new security & quality files
+- All new frontend components
+- .gitignore (protects secrets)
+- .env.example files (no real secrets)
+- This README and the upload script
+
+Security fixes included:
+- Leaked JWT secret fixed
+- Real .env excluded from git
+- Rate limiting on public API
+- Audit logging
+- Scan recovery (orphaned scans)
+- Deep crawler caps & timeouts
+- Confidence scoring & dedupe
+- Async retry with backoff
+- Advanced LogViewer UI
+
+No AI modules were modified (as requested).
+All changes are strictly additive.

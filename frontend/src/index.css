@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: dark;
+}
+
+html, body {
+    margin: 0;
+    background: #09090b;
+    color: #fafafa;
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+}
+
+.font-mono, code, pre, .mono {
+    font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+}
+
+.font-display, h1, h2, h3, h4 {
+    font-family: 'Chivo', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+/* Selection */
+::selection {
+    background: #10b98133;
+    color: #fafafa;
+}
+
+/* Scrollbar (dark, thin) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f46;
+}
+
+@layer base {
+    :root {
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 5% 10%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 5% 10%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 160 84% 39%;
+        --primary-foreground: 240 10% 3.9%;
+        --secondary: 240 4% 16%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 4% 16%;
+        --muted-foreground: 240 5% 65%;
+        --accent: 160 84% 39%;
+        --accent-foreground: 240 10% 3.9%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 4% 16%;
+        --input: 240 4% 16%;
+        --ring: 160 84% 39%;
+        --radius: 0.125rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/* Terminal styling */
+.terminal {
+    background: #000;
+    color: #10b981;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 12px;
+    overflow-y: auto;
+    border: 1px solid #27272a;
+    max-height: 400px;
+}
+.terminal .log-time {
+    color: #52525b;
+}
+.terminal .log-err {
+    color: #ef4444;
+}
+.terminal .log-warn {
+    color: #f59e0b;
+}
+
+/* ASCII loader */
+.ascii-loader {
+    font-family: 'JetBrains Mono', monospace;
+    color: #10b981;
+    letter-spacing: 2px;
+}
+
+/* Blink cursor */
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+.blink {
+    animation: blink 1s steps(1) infinite;
+}
+
+/* Pulse dot for active scan */
+@keyframes pulse-emerald {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+    50% { opacity: 0.85; box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+}
+.pulse-dot {
+    animation: pulse-emerald 1.6s ease-in-out infinite;
+    background: #10b981;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Flash green on new finding */
+@keyframes flash-green {
+    0% { background: rgba(16, 185, 129, 0.25); }
+    100% { background: transparent; }
+}
+.flash-new {
+    animation: flash-green 1.5s ease-out;
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+    }
+}

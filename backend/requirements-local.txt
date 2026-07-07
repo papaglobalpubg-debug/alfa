@@ -1,0 +1,43 @@
+# Slim requirements for local Kali/VPS deployment (no Emergent-private packages)
+# Used by install.sh — installs only what the scanner actually imports.
+
+# Core web framework
+fastapi==0.110.1
+uvicorn==0.25.0
+starlette==0.37.2
+pydantic==2.13.4
+pydantic_core==2.46.4
+python-multipart==0.0.32
+python-dotenv==1.2.2
+email-validator==2.3.0
+
+# HTTP clients (used by vuln scanner)
+httpx==0.28.1
+aiohttp==3.14.1
+requests==2.34.2
+
+# Database
+motor==3.3.1
+pymongo==4.6.3
+
+# Auth / crypto
+PyJWT==2.13.0
+bcrypt==4.1.3
+cryptography>=42.0.0
+passlib==1.7.4
+python-jose==3.5.0
+
+# DNS / networking (takeover scanner v5)
+dnspython==2.8.0
+
+# Optional: screenshots (Playwright) — auto-installs chromium separately
+playwright==1.61.0
+
+# Utilities used by scanner
+PyYAML==6.0.3
+jsonschema==4.26.0
+tenacity==9.1.4
+
+# Test suite deps
+pytest==9.1.1
+pytest-xdist==3.8.0

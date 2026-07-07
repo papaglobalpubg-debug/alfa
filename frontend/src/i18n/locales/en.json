@@ -1,0 +1,239 @@
+{
+  "brand": {
+    "name": "CyberScope",
+    "tagline": "Weaponized Web Auditor",
+    "version": "v7.9.1"
+  },
+  "nav": {
+    "features": "Features",
+    "arsenal": "Arsenal",
+    "pricing": "Pricing",
+    "selfhost": "Self-host",
+    "signin": "Sign in",
+    "signup": "Sign up",
+    "startFree": "Start free",
+    "dashboard": "Dashboard",
+    "home": "Home",
+    "help": "Help"
+  },
+  "sidebar": {
+    "groups": {
+      "main": "Main",
+      "scanner": "Scanner",
+      "attacks": "Attack Modules",
+      "intel": "Intel & Payloads",
+      "recon": "Reconnaissance",
+      "team": "Team",
+      "system": "System"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "newScan": "New Scan",
+      "autopilot": "AI Autopilot",
+      "history": "Scan History",
+      "monitors": "Continuous Monitors",
+      "compare": "Compare Scans",
+      "schedules": "Schedules",
+      "weaponry": "Weaponry",
+      "jwt": "JWT Cracker",
+      "graphql": "GraphQL Scanner",
+      "race": "Race Condition",
+      "threatIntel": "Threat Intel",
+      "subdomains": "Subdomain Discovery",
+      "nuclei": "Nuclei Templates",
+      "payloads": "Custom Payloads",
+      "playground": "Payload Playground",
+      "notifications": "Notifications",
+      "takeover": "Takeover Scan",
+      "bulk": "Bulk Scan",
+      "takeoverHistory": "Takeover History",
+      "takeoverMonitors": "Takeover Monitors",
+      "playbooks": "Playbooks",
+      "services": "Services",
+      "workspaces": "Team Workspaces",
+      "apiKeys": "API Keys & SDK",
+      "billing": "Billing & Plan",
+      "deploy": "Self-host",
+      "settings": "Settings"
+    }
+  },
+  "landing": {
+    "badge": "v7.9 · Commercial Wave",
+    "heroLine1": "The weaponized",
+    "heroLine2": "web vulnerability",
+    "heroLine3": "scanner for",
+    "heroAccent": "operators.",
+    "heroBody": "CyberScope pairs a deep Playwright crawler with 54 attack modules, triple-model AI verification, and a live CVE feed. Built for bug bounty hunters, red teams, and MSSPs.",
+    "ctaScan": "Launch a free scan",
+    "ctaPricing": "See pricing",
+    "ctaOpenDashboard": "Open Dashboard",
+    "stats": {
+      "modules": "Attack Modules",
+      "payloads": "Payloads Cached",
+      "cves": "CVEs Tracked (live)",
+      "aiModels": "AI Models"
+    },
+    "features": {
+      "title": "Built for humans who ship exploits, not tickets.",
+      "kicker": "Feature stack",
+      "killer": {
+        "title": "Killer Attack Modules",
+        "body": "JWT cracking, GraphQL introspection, HTTP Smuggling v2, Deep SSRF (cloud metadata), Prototype Pollution, Race Conditions, MFA Bypass — 54 modules in total."
+      },
+      "ai": {
+        "title": "AI Autopilot + FP Killer",
+        "body": "Triple-model voting (Claude Sonnet 4.6 · GPT · Gemini) cuts false-positives to near-zero and builds novel exploit chains automatically."
+      },
+      "crawler": {
+        "title": "Deep Crawler v2 (Playwright)",
+        "body": "BFS priority queue · 150+ hidden-param mining · sitemap + wayback + urlscan seeds · JS-rendered SPA capture · GraphQL/WebSocket auto-detect."
+      },
+      "intel": {
+        "title": "Live Threat Intel",
+        "body": "CVE feed sync from NVD · weekly AI intel briefs tuned to YOUR stack · compliance mapping (SOC2 · PCI · HIPAA · ISO27001)."
+      },
+      "team": {
+        "title": "Team Workspaces + RBAC",
+        "body": "Multi-analyst workspaces · invite by email · owner / admin / analyst / viewer · assign findings · threaded comments."
+      },
+      "continuous": {
+        "title": "Continuous Monitors",
+        "body": "Re-scan on schedule · webhook to Discord / Slack / Telegram · diff against last run · new-finding-only alerts."
+      }
+    },
+    "arsenal": {
+      "kicker": "Attack arsenal",
+      "title": "12 killer modules that ship today.",
+      "cta": "Open the arsenal"
+    },
+    "pricing": {
+      "kicker": "Pricing",
+      "title": "Pick your tier. Cancel anytime.",
+      "mostPopular": "Most popular",
+      "bestValue": "Best value",
+      "startFree": "Start free",
+      "get": "Get",
+      "buy": "Buy",
+      "current": "Current plan",
+      "redirecting": "Redirecting…",
+      "perMonth": "/ month",
+      "oneTime": "one-time",
+      "scansPerMonth": "Scans / month",
+      "targets": "Targets"
+    },
+    "deploy": {
+      "kicker": "Self-host",
+      "title": "Ship the entire arsenal to your own box.",
+      "body": "Enterprise and Lifetime plans unlock a downloadable .tar.gz release — Docker, docker-compose, CLI, and 219K bundled payloads. Zero telemetry.",
+      "download": "Download v7.9.0 (.tar.gz)",
+      "downloadLocked": "Upgrade to Enterprise to unlock download",
+      "github": "GitHub"
+    },
+    "final": {
+      "kicker": "Now shipping",
+      "title": "Stop chasing findings. Start owning them.",
+      "body": "Sign up and get 5 free deep scans. No credit card. Cancel with one click.",
+      "cta": "Create free account"
+    },
+    "footer": {
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "docs": "Docs"
+    }
+  },
+  "pricing": {
+    "badge": "Simple pricing",
+    "title": "Pick your tier.",
+    "body": "Every plan ships with the full 54-module arsenal. Higher tiers unlock team seats, AI Autopilot, and continuous monitors.",
+    "canceled": "Checkout canceled — pick a tier below when you're ready.",
+    "matrix": {
+      "title": "Feature matrix",
+      "capability": "Capability",
+      "rows": {
+        "modules": "54 attack modules",
+        "crawler": "Deep crawler v2 (Playwright)",
+        "ai": "AI Autopilot + FP Killer",
+        "monitors": "Continuous monitors + webhooks",
+        "cve": "CVE live sync + Threat Intel briefs",
+        "team": "Team workspaces + RBAC",
+        "api": "Public API + SDKs",
+        "whitelabel": "White-label reports",
+        "download": "Self-host download",
+        "lifetime": "One-time payment (no renewal)"
+      }
+    },
+    "continue": "Continue"
+  },
+  "auth": {
+    "signin": {
+      "title": "Sign in to CyberScope",
+      "subtitle": "Welcome back, operator.",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "loading": "Signing in…",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create one"
+    },
+    "signup": {
+      "title": "Create your CyberScope account",
+      "subtitle": "5 free scans. No credit card required.",
+      "name": "Name (optional)",
+      "email": "Email",
+      "password": "Password (min 8 chars)",
+      "password2": "Confirm password",
+      "submit": "Create account",
+      "loading": "Creating…",
+      "haveAccount": "Already have an account?",
+      "signin": "Sign in",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 8 characters"
+    }
+  },
+  "billing": {
+    "title": "Subscription & Invoices",
+    "subtitle": "Manage your CyberScope tier, quotas, and payment methods.",
+    "currentTier": "Current tier",
+    "scansPerMonth": "Scans / month",
+    "targetQuota": "Target quota",
+    "changePlan": "Change plan",
+    "managePortal": "Manage in Stripe",
+    "cancelAtPeriodEnd": "Cancel at period end",
+    "status": "Status",
+    "stripeStatus": "Stripe status",
+    "customerId": "Customer ID",
+    "cancelsAtPeriodEnd": "Cancels at period end",
+    "currentPeriodEnds": "Current period ends",
+    "paymentSuccess": "Payment successful — you're on",
+    "enjoy": "Enjoy."
+  },
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "help": {
+    "button": "Help",
+    "close": "Close",
+    "dashboard": {
+      "title": "Dashboard",
+      "body": "Command center for all your scans, live metrics, and quick-launch tools. Use 'AI Autopilot' to let the LLM plan a full scan for you, or 'Launch Attack' to fire a targeted module."
+    },
+    "newScan": {
+      "title": "New Scan",
+      "body": "Enter a target URL or domain. Deep mode uses Playwright JS rendering + 150+ hidden-param mining. Choose Modules to limit which attacks run."
+    },
+    "weaponry": {
+      "title": "Weaponry",
+      "body": "6 advanced attack tabs: HTTP Smuggling · Cache Poisoning · AI Payload Generator · Prototype Pollution · SSRF Deep · MFA Bypass. Provide targets and click Run."
+    },
+    "billing": {
+      "title": "Billing",
+      "body": "Change your plan, cancel any time, or open the Stripe portal to update your card and download invoices."
+    },
+    "workspaces": {
+      "title": "Team Workspaces",
+      "body": "Invite teammates by email. Roles: owner (full control) · admin (manage members) · analyst (run scans + comment) · viewer (read-only)."
+    }
+  }
+}

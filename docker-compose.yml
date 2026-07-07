@@ -1,0 +1,45 @@
+version: '3.9'
+
+# CyberScope v7.5 — one-command local stack
+# Usage:
+#   docker compose up -d
+#   open http://localhost:3000
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: cyberscope-mongo
+    restart: unless-stopped
+    volumes:
+      - cyberscope_mongo_data:/data/db
+    # P3 · Bind to loopback only — the app container reaches Mongo via the
+    # internal docker network, host access is not required.
+    ports:
+      - "127.0.0.1:27017:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.runCommand({ping:1}).ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  cyberscope:
+    build:
+      context: .
+      args:
+        REACT_APP_BACKEND_URL: http://localhost:8001
+    image: cyberscope:7.5
+    container_name: cyberscope-app
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: unless-stopped
+    environment:
+      MONGO_URL: mongodb://mongo:27017
+      DB_NAME: cyberscope
+      CORS_ORIGINS: '*'
+    ports:
+      - "3000:3000"
+      - "8001:8001"
+
+volumes:
+  cyberscope_mongo_data:
